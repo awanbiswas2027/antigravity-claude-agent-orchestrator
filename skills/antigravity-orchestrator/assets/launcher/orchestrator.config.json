@@ -1,0 +1,41 @@
+{
+  "project_dir": "",
+  "prompt_file": "autonomous_software_engineering_orchestrator.md",
+  "startup_timeout_seconds": 60,
+  "max_start_attempts": 3,
+  "auto_install": true,
+  "launch_claude": true,
+  "claude_startup_prompt": "Read {prompt_file} in this folder and adopt it as your operating instructions. Then run the Startup Procedure, starting with System Bring-Up (orchestrator-launcher.exe --ensure), and report system status.",
+  "components": [
+    {
+      "name": "Claude Code",
+      "kind": "cli",
+      "required": true,
+      "executable_candidates": ["claude", "%APPDATA%\\npm\\claude.cmd", "%USERPROFILE%\\.local\\bin\\claude.exe"],
+      "check_args": ["--version"],
+      "install_command": ["npm", "install", "-g", "@anthropic-ai/claude-code"]
+    },
+    {
+      "name": "Gemini CLI",
+      "kind": "cli",
+      "required": true,
+      "executable_candidates": ["gemini", "%APPDATA%\\npm\\gemini.cmd"],
+      "check_args": ["--version"],
+      "install_command": ["npm", "install", "-g", "@google/gemini-cli"],
+      "auth_env": ["GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_CLOUD_PROJECT"],
+      "auth_files": ["%USERPROFILE%\\.gemini\\oauth_creds.json"]
+    },
+    {
+      "name": "Antigravity",
+      "kind": "app",
+      "required": true,
+      "executable_candidates": [
+        "%LOCALAPPDATA%\\Programs\\Antigravity\\Antigravity.exe",
+        "%ProgramFiles%\\Antigravity\\Antigravity.exe",
+        "antigravity"
+      ],
+      "process_names": ["Antigravity.exe"],
+      "start_args": ["{project_dir}"]
+    }
+  ]
+}

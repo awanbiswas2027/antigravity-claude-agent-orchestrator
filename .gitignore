@@ -5,3 +5,14 @@
 .shared/logs/
 .shared/system_status.json
 .shared/launch_claude.cmd
+
+# Skill eval workspace (large, regenerated)
+skills/*-workspace/
+
+# Colony liveness files (volatile)
+.colony/ants/*/heartbeat
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class

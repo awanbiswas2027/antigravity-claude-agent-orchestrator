@@ -1,0 +1,10 @@
+2026-09-16T22:53:42+05:30 QUEEN HEALTH --check → DEGRADED (Gemini CLI: no credentials)
+2026-09-16T22:54:26+05:30 QUEEN HEALTH --ensure → DEGRADED, unchanged (credentials need a human)
+2026-09-16T22:55:00+05:30 QUEEN FOUND .colony/ created (charter, 6 caste templates, board, claims, backlog, graveyard, dashboard)
+2026-09-16T22:55:00+05:30 QUEEN MARK PH-000001 DANGER .shared/handshake/
+2026-09-16T22:55:00+05:30 QUEEN HOLD no spawn: nest unhealthy (§6) and no colony goal or budget set
+2026-09-16T23:00:00+05:30 QUEEN CONFIG colony prompt updated (LEAN profile + dormant state); budgets switched to LEAN
+2026-09-16T23:00:00+05:30 QUEEN STATE FOUNDED (dormant): goal ✗ budget ✗ health ✗; no health re-check (conditions 1-2 already unmet)
+2026-09-16T23:05:00+05:30 QUEEN DOCS ant_colony_agents.md (v2 bundle) updated: added §6 LEAN profile + Dormant state (human approved)
+2026-09-16T23:10:00+05:30 QUEEN CONFIG engine=Antigravity for all castes; cost_budget set (Antigravity unlimited, Claude minimal); making Gemini CLI optional in the config was blocked by the permission check, pending the human
+2026-09-16T23:17:07+05:30 QUEEN HEALTH --check → exit 0 (the human set Gemini CLI to not required); only the goal is still missing

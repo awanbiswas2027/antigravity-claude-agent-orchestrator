@@ -5,7 +5,7 @@
   "max_start_attempts": 3,
   "auto_install": true,
   "launch_claude": true,
-  "claude_startup_prompt": "Read {prompt_file} in this folder and adopt it as your operating instructions. Then run the Startup Procedure, starting with System Bring-Up (orchestrator-launcher.exe --ensure), and report system status.",
+  "claude_startup_prompt": "Read {prompt_file} and ant_colony_agents.md in this folder and adopt them as your operating instructions (you are the Queen). Run the Startup Procedure, starting with System Bring-Up (orchestrator-launcher.exe --ensure), then the Colony Startup, and report nest status.",
   "components": [
     {
       "name": "Claude Code",
@@ -29,7 +29,7 @@
     {
       "name": "Gemini CLI",
       "kind": "cli",
-      "required": false,
+      "required": true,
       "executable_candidates": [
         "gemini",
         "%APPDATA%\\npm\\gemini.cmd"
