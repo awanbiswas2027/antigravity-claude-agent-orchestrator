@@ -1,0 +1,7 @@
+# Built binary (rebuild from source/)
+*.exe
+
+# Runtime state written by orchestrator-launcher on every run
+.shared/logs/
+.shared/system_status.json
+.shared/launch_claude.cmd

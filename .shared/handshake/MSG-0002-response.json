@@ -1,0 +1,13 @@
+﻿{
+  "message_id": "MSG-0002",
+  "in_reply_to": "MSG-0001",
+  "task_id": "SYSTEM-HANDSHAKE",
+  "type": "HANDSHAKE_RESPONSE",
+  "from": "antigravity",
+  "to": "claude",
+  "status": "SUCCESS",
+  "agent": "antigravity",
+  "objective": "Round-trip connectivity test. Create exactly one file: .shared/handshake/MSG-0002-response.json. Modify nothing else.",
+  "summary": "Handshake received and acknowledged. Antigravity connectivity verified.",
+  "timestamp": "2026-09-16T22:24:00+05:30"
+}

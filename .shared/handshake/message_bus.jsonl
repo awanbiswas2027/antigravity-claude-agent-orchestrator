@@ -1,0 +1,5 @@
+{"message_id":"MSG-0001","type":"HANDSHAKE_REQUEST","from":"claude","to":"antigravity","channel":"antigravity-ide chat -m agent","timestamp":"2026-09-16T21:55:24+05:30"}
+{"message_id":"MSG-0001","type":"DELIVERY_RESULT","channel":"antigravity-ide chat","status":"TIMEOUT","detail":"no response file after 300s","timestamp":"2026-09-16T22:09:03+05:30"}
+{"message_id":"MSG-0001","type":"DELIVERY_RESULT","channel":"agentapi new-conversation","status":"FAILED","detail":"ANTIGRAVITY_LS_ADDRESS is not set","timestamp":"2026-09-16T22:09:03+05:30"}
+{"message_id":"MSG-0001","type":"HANDSHAKE_REQUEST","attempt":2,"channel":"antigravity-ide chat -m agent -r (project folder open)","timestamp":"2026-09-16T22:11:36.7936071+05:30"}
+{"message_id":"MSG-0002","in_reply_to":"MSG-0001","type":"HANDSHAKE_RESULT","from":"antigravity","agent":"Antigravity agent (conversation af88b146, Gemini 3.8 Flash (High))","channel":"Antigravity app chat started by the human -> file .shared/handshake/MSG-0002-response.json","status":"SUCCESS","verified_by":"claude","note":"response written to root and nested .shared/handshake (2 files, request asked for 1)","timestamp":"2026-09-16T22:27:14+05:30"}

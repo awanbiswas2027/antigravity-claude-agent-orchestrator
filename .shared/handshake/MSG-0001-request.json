@@ -1,0 +1,9 @@
+{
+  "message_id": "MSG-0001",
+  "task_id": "SYSTEM-HANDSHAKE",
+  "type": "HANDSHAKE_REQUEST",
+  "from": "claude",
+  "to": "antigravity",
+  "objective": "Round-trip connectivity test. Create exactly one file: .shared/handshake/MSG-0002-response.json. Modify nothing else.",
+  "timestamp": "2026-09-16T21:55:24+05:30"
+}
